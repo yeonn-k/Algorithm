@@ -27,7 +27,7 @@ const solution = (array, commands) => {
   commands.forEach(el => {
     // command 구조 분해 할당
     const [i, j, k] = el;
-    // slice 로 자르기, sort 로 정렬, index는 `- 번째 -1` 과 같다.
+    // slice 로 자르기, sort 로 정렬, k번째 숫자 추출
     const filteredArray = (array.slice(i-1, j)).sort((a, b) => a - b);
     result.push(filteredArray[k-1])
   })
