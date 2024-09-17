@@ -25,3 +25,11 @@ function solution(a, b) {
     return answer.reduce((acc, cur) => acc + cur, 0)
 }
 ```
+
+### 📖 다른 사람 풀이
+```javascript
+const solution = ( a, b ) => {
+   // _: 해당 매개 변수 생략( 사용하지 않는 경우 )
+	return a.reduce((acc, _, i) => acc += a[i] * b[i], 0);
+```
+
